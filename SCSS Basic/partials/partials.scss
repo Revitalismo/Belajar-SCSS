@@ -1,0 +1,30 @@
+@use "_base";
+
+.header {
+    padding: 20px;
+    margin: 3rem auto;
+    max-width: 300px;
+    font-family: base.$font-base;
+    background-color: base.$bg-light;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    
+    .title {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: base.$dark-primary;
+    }
+    
+    .description {
+        color: base.$dark-secondary;
+    }
+
+    img {
+        height: base.$profile-picture;
+        width: base.$profile-picture;
+        border-radius: 100%;
+        object-fit: base.$object-cover;
+    }
+}

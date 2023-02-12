@@ -1,0 +1,44 @@
+$font-base: Roboto;
+
+$text-sm: 14px;
+$text-base: 16px;
+$text-lg: 18px;
+
+$dark-primary: rgb(26, 26, 26);
+$dark-secondary: rgb(44, 44, 44);
+
+$bg-blue: rgb(45, 108, 244);
+$bg-pink: rgb(248, 48, 141);
+
+$color-light: #f4f4f4;
+
+$profile-picture: 80px;
+$square: 1;
+$object-cover: cover;
+
+@mixin theme($bg: $bg-blue, $color: $color-light) {
+    background-color: $bg;
+    color: $color;
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(115,115,115,0.34);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(115,115,115,0.34);
+    box-shadow: 0px 10px 25px 0px rgba(115,115,115,0.34);
+}
+
+%card {
+    padding: 20px;
+    margin: 3rem auto;
+    max-width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+%profile-picture {
+    height: base.$profile-picture;
+    width: base.$profile-picture;
+    border-radius: 100%;
+    object-fit: base.$object-cover;
+}

@@ -1,0 +1,70 @@
+.card-default, .card-primary, .card-secondary {
+  padding: 20px;
+  margin: 3rem auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.card-default img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.card-default {
+  font-family: "Roboto";
+  background-color: rgb(249, 249, 249);
+  color: #232323;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+  -moz-box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+  box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+}
+.card-default .title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.card-primary {
+  font-family: "Roboto";
+  background-color: rgb(45, 108, 244);
+  color: #f4f4f4;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+  -moz-box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+  box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+}
+.card-primary .title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.card-primary img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.card-secondary {
+  font-family: "Roboto";
+  background-color: rgb(248, 48, 141);
+  color: #f4f4f4;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+  -moz-box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+  box-shadow: 0px 10px 25px 0px rgba(115, 115, 115, 0.34);
+}
+.card-secondary .title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.card-secondary img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=operators.css.map */

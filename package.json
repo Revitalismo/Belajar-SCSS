@@ -1,0 +1,16 @@
+{
+  "name": "belajar-scss",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
+  },
+  "devDependencies": {
+    "scss": "^0.2.4",
+    "vite": "^4.1.0"
+  }
+}

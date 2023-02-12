@@ -1,0 +1,16 @@
+.header {
+  margin: 3rem auto;
+  max-width: 300px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.header .title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgb(26, 26, 26);
+}
+.header .description {
+  color: rgb(44, 44, 44);
+}/*# sourceMappingURL=nesting.css.map */

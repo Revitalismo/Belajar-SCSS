@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  padding: 1rem;
+  margin: 3rem auto;
+  max-width: 300px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 25px rgba(70, 70, 70, 0.0901960784);
+}
+.profile-card .profile-img {
+  height: 80px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+.profile-card header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.profile-card .profile-info {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.profile-card h1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+.profile-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+.profile-card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #4d4d4d;
+}
+
+.tutorial-list {
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.tutorial-list header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  font-weight: 500;
+}
+.tutorial-list header h1 {
+  color: #252525;
+  font-size: 1.125rem;
+}
+.tutorial-list header h3 {
+  color: #2f2f2f;
+  font-size: 1rem;
+}
+.tutorial-list ol {
+  margin-left: 1.5rem;
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}/*# sourceMappingURL=style.css.map */

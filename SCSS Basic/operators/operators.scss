@@ -1,0 +1,55 @@
+@use "base";
+@use "sass:math";
+
+.card-default {
+    @extend %card;
+
+    font-family: base.$font-base;
+    @include base.theme(base.$bg-light, base.$color-dark);
+
+    .title {
+        font-size: math.div(18rem,16rem) + 0rem;
+        font-weight: 100 + 400;
+    }
+
+    img {
+        @extend %profile-picture;
+    }
+}
+
+.card-primary {
+    @extend %card;
+
+    font-family: base.$font-base;
+    @include base.theme;
+    
+    .title {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    img {
+        height: base.$profile-picture;
+        width: base.$profile-picture;
+        border-radius: 100%;
+        object-fit: base.$object-cover;
+    }
+}
+
+.card-secondary {
+    @extend %card;
+    font-family: base.$font-base;
+    @include base.theme(base.$bg-pink);
+    
+    .title {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    img {
+        height: base.$profile-picture;
+        width: base.$profile-picture;
+        border-radius: 100%;
+        object-fit: base.$object-cover;
+    }
+}

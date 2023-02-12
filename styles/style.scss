@@ -1,0 +1,86 @@
+$text-sm: 14px;
+$text-base: 16px;
+$text-lg: 18px;
+
+%roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+%roboto-normal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+%flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+%profile-img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.profile-card {
+    margin: 3rem auto;
+    padding: 20px;
+
+    max-width: 300px;
+    @extend %flex-col;
+
+    border-radius: 10px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(249, 249, 249);
+
+    .profile-bio {
+        @extend %roboto-normal;
+        font-size: $text-sm;
+        line-height: 1.5;
+    }
+
+    header {
+        @extend %flex-row;
+    }
+}
+
+.profile-img {
+    @extend %profile-img;
+}
+
+.profile-info {
+    h1, h3 {
+        @extend %roboto-medium;
+    }
+    
+    h1 {
+        font-size: $text-lg;        
+    }
+    
+    h3 {
+        font-size: $text-base; 
+    }
+}
+
+.tutorial-list {
+    padding: 20px;
+    
+    header {
+        @extend %flex-col;
+    }
+
+    ol {
+        margin: 10px 24px;
+        list-style-type: decimal;
+        @extend %flex-col;
+    }
+}
